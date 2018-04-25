@@ -111,7 +111,7 @@ public class Dataflow implements Serializable
   private static final String COLUMN_MAX_SPEED = "MaxSpeed";
   private static final String COLUMN_COUNT = "Count";
 
-  private static final String PUBSUB_TOPIC_NAME = "traffic";
+  private static final String PUBSUB_TOPIC_NAME = "Traffic";
   private static final String TOPIC_ID = "projects/" + PROJECT_ID + "/topics/" + PUBSUB_TOPIC_NAME;
 
   private static final String DATAFLOW_BUCKET = PROJECT_ID + "-dataflow";
@@ -239,7 +239,7 @@ from random import randint
 from google.cloud import pubsub
 
 project = 'my-project-id' # Put your Google project id to here
-topic = 'traffic'
+topic = 'Traffic'
 
 locations = ['Pori', 'Nakkila', 'Vihti', 'Karkkila']
 directions = [1, 2]
