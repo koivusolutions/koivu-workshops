@@ -288,7 +288,7 @@ Add following message.
 Verify that row is in Traffic table.
 
 ```sql
-SELECT * FROM `koivu-juuri.Workshop.Traffic`
+SELECT * FROM `Workshop.Traffic`
 WHERE Time = '2018-04-02T14:32:56+03:00'
 ```
 
