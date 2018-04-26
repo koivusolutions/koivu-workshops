@@ -284,4 +284,20 @@ Go to the [Dataflow Console](https://console.cloud.google.com/dataflow)
 
 Open `traffic-dataflow` dataflow.
 
+## Cleanup Resources
 
+### Step 1 - Dataflow
+
+Go to the [Dataflow Console](https://console.cloud.google.com/dataflow)
+
+* Open `traffic-dataflow` dataflow
+* Click Stop button
+* Select Cancel
+* Click Stop Job
+
+### Step 2 - Cloud Storage
+
+Go to the [Storage Console](https://console.cloud.google.com/storage)
+
+* Select  `my-project-id-dataflow` bucket
+* Click Delete
