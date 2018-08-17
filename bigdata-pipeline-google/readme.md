@@ -89,7 +89,8 @@ WITH Pori AS (
 
 
 ### Links
-[Google BigQuery Console] (https://console.cloud.google.com/bigquery)
+[Google BigQuery Console](https://console.cloud.google.com/bigquery)
+
 [Google BigQuery Console Classic UI](https://bigquery.cloud.google.com)
 
 [Query Syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax)
