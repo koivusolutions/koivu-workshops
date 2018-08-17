@@ -12,7 +12,7 @@
 
 ## BigQuery
 
-Go to the [BigQuery Console](https://bigquery.cloud.google.com)
+Go to the [BigQuery Console](https://console.cloud.google.com/bigquery)
 
 ### Step 1 - Create new dataset
 
