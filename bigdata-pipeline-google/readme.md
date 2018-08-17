@@ -238,7 +238,7 @@ Go to the [Cloud Functions Console](https://console.cloud.google.com/functions/)
   "name": "Traffic function",
   "version": "1.0",
   "dependencies": {
-     "@google-cloud/bigquery": "1.2"
+     "@google-cloud/bigquery": "^1.2"
   }
 }
 ```
@@ -248,7 +248,7 @@ Go to the [Cloud Functions Console](https://console.cloud.google.com/functions/)
 ```javascript
 var BigQuery = require('@google-cloud/bigquery');
 
-exports.subscribe = (event, callback) => {
+exports.recordVehicle = (event, callback) => {
   const pubSubMessage = Buffer.from(event.data.data, 'base64').toString();
   console.log('PubSub message: ' + pubSubMessage);
 
@@ -272,7 +272,12 @@ exports.subscribe = (event, callback) => {
 };
 ```
 
-### Step 4 - Test sending Pub/Sub message
+### Step 4 - Edit **Function to execute**
+
+```recordVehicle```
+
+
+### Step 5 - Test sending Pub/Sub message
 
 Go to the [Pub/Sub Console](https://console.cloud.google.com/cloudpubsub), select `Traffic` topic and click `Publish Message`.
 
