@@ -199,8 +199,8 @@ public class Dataflow implements Serializable
                   statistics.addValue( ( (Integer)tableRow.get( COLUMN_SPEED ) ).doubleValue( ) );
                 }
                 outputTableRow.set( COLUMN_AVERAGE_SPEED, Double.valueOf( statistics.getMean( ) ) );
-                outputTableRow.set( COLUMN_MIN_SPEED, Integer.valueOf( (int)statistics.getMax( ) ) );
-                outputTableRow.set( COLUMN_MAX_SPEED, Integer.valueOf( (int)statistics.getMin( ) ) );
+                outputTableRow.set( COLUMN_MIN_SPEED, Integer.valueOf( (int)statistics.getMin( ) ) );
+                outputTableRow.set( COLUMN_MAX_SPEED, Integer.valueOf( (int)statistics.getMax( ) ) );
                 outputTableRow.set( COLUMN_COUNT, Long.valueOf( statistics.getN( ) ) );
                 c.output( outputTableRow );
               }
